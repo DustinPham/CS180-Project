@@ -9,7 +9,7 @@
 	else {
     	header('Location: index.php');
 	}
-
+ 
 	$sql = "SELECT * FROM Users WHERE username = '".$userVar."'";	//following lines extracts all of current users info
 	$results = executeStatement($sql);
 	$password = $results[0][1];
